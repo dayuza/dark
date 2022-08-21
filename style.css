@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	height: 100vh;
+	background: hsl(200, 75%, 65%);
+	transition: background 1.2s;
+}
+
+.container.dark {
+	background: hsl(200, 65%, 8%);
+}
+.container-icons-outer {
+	height: 120px;
+}
+.icon-container {
+	position: relative;
+}
+.icons {
+	--rotation: 0;
+	position: absolute;
+	left: calc(50% - 20px);
+	top: -117px;
+	margin: auto;
+	transition: 1.2s;
+	width: 40px;
+	text-align: center;
+	transform: rotate(calc(var(--rotation) * 1deg));
+}
+.icon {
+	font-size: 2em;
+	padding: 40px 0;
+	color: hsl(50, 85%, 55%);
+	transition: color 1.2s;
+}
+.dark .icon {
+	color: #ccc;
+}
+.icon1 {
+	transform: rotate(180deg);
+}
+
+.btn-container {
+	text-align: center;
+}
+.swap-btn {
+	width: 120px;
+	margin: auto;
+	padding: 10px 20px;
+	background: #848484;
+	font-weight: bold;
+	border: none;
+	border-radius: 6px;
+	color: #eee;
+	outline: none;
+	cursor: pointer;
+	line-height: 1.5em;
+}
